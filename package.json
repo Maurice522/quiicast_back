@@ -1,0 +1,24 @@
+{
+  "name": "quiicast-backend",
+  "version": "1.0.0",
+  "description": "QuiiCast signaling backend (Express + ws + MongoDB)",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.1",
+    "ws": "^8.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
