@@ -13,3 +13,7 @@ services:
         value: https://quiicast.com,https://www.quiicast.com
       - key: OTP_TTL_MINUTES
         value: "10"
+      - key: CF_TURN_KEY_ID
+        sync: false
+      - key: CF_TURN_API_TOKEN
+        sync: false
