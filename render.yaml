@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: quiicast-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: https://quiicast.com,https://www.quiicast.com
+      - key: OTP_TTL_MINUTES
+        value: "10"
